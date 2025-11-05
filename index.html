@@ -35,7 +35,7 @@
         .hero-section {
             min-height: 100vh;
             background: linear-gradient(rgba(245, 230, 211, 0.9), rgba(168, 181, 160, 0.8)),
-                         url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:%238B9DC3;stop-opacity:0.6"/><stop offset="100%" style="stop-color:%23A8B5A0;stop-opacity:0.4"/></linearGradient></defs><rect width="1200" height="800" fill="url(%23sky)"/><path d="M0,600 Q300,500 600,550 T1200,600 L1200,800 L0,800 Z" fill="%239CAF88" opacity="0.7"/><path d="M100,650 Q400,580 700,620 T1200,650 L1200,800 L0,800 Z" fill="%236B8E23" opacity="0.8"/><path d="M200,700 Q500,650 800,680 T1200,700 L1200,800 L0,800 Z" fill="%23A8B5A0" opacity="0.9"/><circle cx="150" cy="200" r="80" fill="%23D4B896" opacity="0.3"/><circle cx="1050" cy="150" r="100" fill="%23C19A6B" opacity="0.2"/></svg>');
+                         url('data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1200 800\"><defs><linearGradient id=\"sky\" x1=\"0%\" y1=\"0%\" x2=\"0%\" y2=\"100%\"><stop offset=\"0%\" style=\"stop-color:%238B9DC3;stop-opacity:0.6\"/><stop offset=\"100%\" style=\"stop-color:%23A8B5A0;stop-opacity:0.4\"/></linearGradient></defs><rect width=\"1200\" height=\"800\" fill=\"url(%23sky)\"/><path d=\"M0,600 Q300,500 600,550 T1200,600 L1200,800 L0,800 Z\" fill=\"%239CAF88\" opacity=\"0.7\"/><path d=\"M100,650 Q400,580 700,620 T1200,650 L1200,800 L0,800 Z\" fill=\"%236B8E23\" opacity=\"0.8\"/><path d=\"M200,700 Q500,650 800,680 T1200,700 L1200,800 L0,800 Z\" fill=\"%23A8B5A0\" opacity=\"0.9\"/><circle cx=\"150\" cy=\"200\" r=\"80\" fill=\"%23D4B896\" opacity=\"0.3\"/><circle cx=\"1050\" cy=\"150\" r=\"100\" fill=\"%23C19A6B\" opacity=\"0.2\"/></svg>');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -369,6 +369,22 @@
             </div>
         </div>
 
+        <!-- Moved Spotify section above lodging check -->
+        <div class="spotify-container">
+            <h2 class="section-title" style="color: white; margin-bottom: 1rem;">פלייליסט לנסיעה</h2>
+            <p style="color: #ccc; margin-bottom: 2rem;">מוזיקה טובה לדרך אלינו לחגוג את בר המצווה של נעם</p>
+            <div style="background: rgba(0, 0, 0, 0.5); border-radius: 15px; padding: 1.5rem; position: relative;">
+                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5wyXokBdpNorymnvKKKNBT?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <div style="position: absolute; top: 10px; right: 10px; background: rgba(29, 185, 84, 0.9); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">
+                    <i class="fas fa-info-circle"></i> לחץ על הכפתור הירוק בתוך הפלייליסט להפעלה
+                </div>
+            </div>
+            <p style="color: #aaa; font-size: 0.85rem; margin-top: 1rem;">
+                💡 <strong>טיפ:</strong> אם הכפתור לא מופיע, פתחו את הדף בדפדפן Chrome או Safari
+            </p>
+        </div>
+
+        <!-- Lodging check section now comes after the Spotify section -->
         <div class="glass-card">
             <h2 class="section-title">בדיקת שיבוץ לצימרים</h2>
             <div class="search-container">
@@ -383,20 +399,6 @@
                 </div>
                 <div id="searchResult"></div>
             </div>
-        </div>
-
-        <div class="spotify-container">
-            <h2 class="section-title" style="color: white; margin-bottom: 1rem;">פלייליסט לנסיעה</h2>
-            <p style="color: #ccc; margin-bottom: 2rem;">מוזיקה טובה לדרך אלינו לחגוג את בר המצווה של נעם</p>
-            <div style="background: rgba(0, 0, 0, 0.5); border-radius: 15px; padding: 1.5rem; position: relative;">
-                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5wyXokBdpNorymnvKKKNBT?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                <div style="position: absolute; top: 10px; right: 10px; background: rgba(29, 185, 84, 0.9); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">
-                    <i class="fas fa-info-circle"></i> לחץ על הכפתור הירוק בתוך הפלייליסט להפעלה
-                </div>
-            </div>
-            <p style="color: #aaa; font-size: 0.85rem; margin-top: 1rem;">
-                💡 <strong>טיפ:</strong> אם הכפתור לא מופיע, פתחו את הדף בדפדפן Chrome או Safari
-            </p>
         </div>
 
         <div class="glass-card">
